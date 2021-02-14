@@ -40,9 +40,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         navigationItem.leftBarButtonItem = editButtonItem
         edit = false
         
-        
-        
-        
     }
     
     
@@ -68,6 +65,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             Helper().deleteItem(item: itemList[indexPath.row], token: token)
+            
             //削除をしたものを非表示にする。
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
@@ -86,6 +84,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             next.date3 = itemList[indexPath.row].date
             next.linkk = itemList[indexPath.row].linkk
             next.not = itemList[indexPath.row].notification
+            
+            
+            
             print(itemList[indexPath.row].id)
             
             
@@ -98,10 +99,12 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             nextEdit.editlabel3 =  itemList[indexPath.row].linkk
             nextEdit.editDate = itemList[indexPath.row].date
             
+            nextEdit.id = itemList[indexPath.row].id
+            
             print(itemList[indexPath.row].id)
             
-  navigationController?.pushViewController(nextEdit, animated: true)
-          
+            navigationController?.pushViewController(nextEdit, animated: true)
+            
             
         }
         

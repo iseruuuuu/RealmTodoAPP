@@ -23,6 +23,7 @@
 		94932D2925D68D220024FAEA /* s1.png in Resources */ = {isa = PBXBuildFile; fileRef = 94932D2825D68D220024FAEA /* s1.png */; };
 		94932D2C25D6A18E0024FAEA /* s2.png in Resources */ = {isa = PBXBuildFile; fileRef = 94932D2B25D6A18E0024FAEA /* s2.png */; };
 		94B3457E25D253BE00B7EC8D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B3457D25D253BE00B7EC8D /* ListViewController.swift */; };
+		94EC3F2925D7FFFB00BBC13C /* s3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94EC3F2825D7FFFB00BBC13C /* s3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		94932D2825D68D220024FAEA /* s1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s1.png; sourceTree = "<group>"; };
 		94932D2B25D6A18E0024FAEA /* s2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s2.png; sourceTree = "<group>"; };
 		94B3457D25D253BE00B7EC8D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		94EC3F2825D7FFFB00BBC13C /* s3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s3.jpg; sourceTree = "<group>"; };
 		BFC2E9AD574541F1916D9022 /* Pods_RealmTodoAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmTodoAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6CFA9B259B8D9514CD76951 /* Pods-RealmTodoAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTodoAPP.release.xcconfig"; path = "Target Support Files/Pods-RealmTodoAPP/Pods-RealmTodoAPP.release.xcconfig"; sourceTree = "<group>"; };
 		EB67E5C3E9775BA86836C739 /* Pods-RealmTodoAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTodoAPP.debug.xcconfig"; path = "Target Support Files/Pods-RealmTodoAPP/Pods-RealmTodoAPP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				94932D0F25D619790024FAEA /* 118250.png */,
 				94932D2B25D6A18E0024FAEA /* s2.png */,
 				94932D2825D68D220024FAEA /* s1.png */,
+				94EC3F2825D7FFFB00BBC13C /* s3.jpg */,
 				94932D2525D688E20024FAEA /* s.png */,
 				948D1AA325D0F1720094ACA1 /* Assets.xcassets */,
 				948D1AA525D0F1720094ACA1 /* LaunchScreen.storyboard */,
@@ -180,6 +183,7 @@
 				948D1AA725D0F1720094ACA1 /* LaunchScreen.storyboard in Resources */,
 				94932D2925D68D220024FAEA /* s1.png in Resources */,
 				94932D1025D619790024FAEA /* 118250.png in Resources */,
+				94EC3F2925D7FFFB00BBC13C /* s3.jpg in Resources */,
 				94932D2625D688E20024FAEA /* s.png in Resources */,
 				948D1AA425D0F1720094ACA1 /* Assets.xcassets in Resources */,
 				948D1AA225D0F1710094ACA1 /* Main.storyboard in Resources */,

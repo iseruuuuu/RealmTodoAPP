@@ -17,5 +17,10 @@ class TodoItem:Object {
     @objc dynamic var date = Date()
     @objc dynamic var notification: Bool = false
     
+    override static func primaryKey() -> String? {
+        //idを保存する？
+        return "id"
+    }
+    
     
 }

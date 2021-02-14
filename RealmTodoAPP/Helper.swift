@@ -29,11 +29,45 @@ class Helper{
             setNotification(item: item)
         }else{
         }
+    }
+    
+ //   func update(title:String,mode:String,linkk:String,date:Date,notification:Bool,id:NSNumber) {
+    func update(title:String,mode:String,linkk:String,date:Date,notification:Bool,id:String) {
+        // let update = realm.objects(TodoItem.self).filter("id")
         
+        let item = TodoItem()
+        item.title = title
+        item.date = date
+        item.mode = mode
+        item.linkk = linkk
+        item.notification = notification
+        item.id = String(Int.random(in: 0...9999))
+ 
+        
+        
+      //  let target = realm.objects(TodoItem.self).filter("id")
+        try! realm.write{
+            //realm.autorefresh
+               realm.add(item, update: .modified)
+           // realm.create(TodoItem.self, value: ["title":title,"date":date,"mode":mode,"linkk":linkk,"notification":notification])
+        /*
+            let results = realm.objects(TodoItem.self)
+            results[0].title = title
+            results[0].date = date
+            results[0].mode = mode
+            results[0].linkk = linkk
+            results[0].notification = notification
+             
+ */
+         //   realm.add(TodoItem() ,update: .modified)
+           
+  
+        }
     }
     
     
-   
+    
+    
     
     
     

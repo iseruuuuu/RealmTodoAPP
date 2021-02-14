@@ -35,6 +35,8 @@ class EditViewController: UIViewController {
     var editlabel3 = String()
     var editDate = Date()
     
+    var id = String()
+    
     let realm = try! Realm()
     var itemList:Results<TodoItem>!
     var token:NotificationToken!
@@ -52,6 +54,7 @@ class EditViewController: UIViewController {
         addd.layer.cornerRadius = 15
         addd.layer.borderWidth = 2
         addd.layer.borderColor = UIColor.systemTeal.cgColor
+        print(id)
     }
     
     
@@ -60,8 +63,9 @@ class EditViewController: UIViewController {
         let defaultAction: UIAlertAction = UIAlertAction(title: "変更する", style: UIAlertAction.Style.default, handler:{ [self]
             (action: UIAlertAction!) -> Void in
             print("OK")
+            Helper().update(title:textField.text!,mode:textField2.text!,linkk:textField3.text!,date: datePicker2.date,notification: change.isOn,id:id)
             
-            Helper().save(title:textField.text!,mode:textField2.text!,linkk:textField3.text!,date: datePicker2.date,notification: change.isOn)
+            
             self.navigationController?.popViewController(animated: true)
         })
         let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
